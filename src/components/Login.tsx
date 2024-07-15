@@ -23,7 +23,7 @@ const Login = () => {
         console.log(e);
         return;
       });
-    alert("Succesfully logged in as " + auth.currentUser?.email);
+    alert("Succesfully logged in  ");
     setPassword("");
     setEmail("");
   }
