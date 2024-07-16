@@ -52,7 +52,7 @@ const Register = () => {
   return (
     <div className="flex justify-center items-center h-[100vh]">
       <form
-        className=" shadow-2xl p-10 bg-black flex justify-center items-center flex-col text-white transition-all duration-1000 ease-in-out"
+        className=" shadow-2xl p-5 md:p-10 bg-black flex justify-center items-center flex-col text-white transition-all duration-1000 ease-in-out"
         onSubmit={handleSubmission}
       >
         <h1 className="text-3xl font-semibold mb-10">Register</h1>
@@ -66,7 +66,7 @@ const Register = () => {
               required={true}
               name="username"
               placeholder="Username"
-              className="px-4 py-3 text-lg outline-none focus:outline-none w-[250px] md:w-[300px] text-black bg-white "
+              className="px-4 py-3 text-lg outline-none focus:outline-none w-[230px] md:w-[300px] text-black bg-white "
               value={username}
               onChange={(e) => setUsername(e.target.value)}
             />
@@ -80,7 +80,7 @@ const Register = () => {
               required={true}
               name="email"
               placeholder="Email"
-              className="px-4 py-3 text-lg outline-none focus:outline-none w-[250px] md:w-[300px] text-black bg-white "
+              className="px-4 py-3 text-lg outline-none focus:outline-none w-[230px] md:w-[300px] text-black bg-white "
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
@@ -99,7 +99,7 @@ const Register = () => {
               name="password"
               placeholder="Password"
               required={true}
-              className="px-4 py-3 text-lg outline-none focus:outline-none w-[300px] text-black bg-white "
+              className="px-4 py-3 text-lg outline-none focus:outline-none w-[230px] md:w-[300px] text-black bg-white "
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />
