@@ -32,7 +32,7 @@ const ForgotPass = () => {
   return (
     <div className="flex justify-center items-center h-[100vh]">
       <form
-        className=" shadow-2xl p-10 bg-black flex justify-center items-center flex-col text-white transition-all duration-1000 ease-in-out"
+        className=" shadow-2xl p-5 md:p-10 bg-black flex justify-center items-center flex-col text-white transition-all duration-1000 ease-in-out"
         onSubmit={handleSubmission}
       >
         <h1 className="text-3xl font-semibold mb-10">Change Password</h1>
