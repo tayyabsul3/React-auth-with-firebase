@@ -55,7 +55,7 @@ const Login = () => {
   return (
     <div className="flex justify-center items-center h-[100vh]">
       {isSignIn ? (
-        <div className="bg-black p-5  md:p-10 text-white shadow-xl">
+        <div className="bg-black p-8  md:p-10 text-white shadow-xl">
           <p>Already Logged In sign-out now to Login again.</p>
           <button
             onClick={handleLogout}
