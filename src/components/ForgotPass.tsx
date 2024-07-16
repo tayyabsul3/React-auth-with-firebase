@@ -47,7 +47,7 @@ const ForgotPass = () => {
                 required={true}
                 name="email"
                 placeholder="Email"
-                className="px-4 py-3 text-lg outline-none focus:outline-none w-[300px] text-black bg-white "
+                className="px-4 py-3 text-lg outline-none focus:outline-none w-[250px] md:w-[300px] text-black bg-white "
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
