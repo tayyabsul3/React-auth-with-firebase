@@ -55,7 +55,7 @@ const Register = () => {
         className=" shadow-2xl p-8 sm:p-10 bg-green-800 flex justify-center items-center flex-col text-white transition-all duration-1000 ease-in-out rounded-3xl"
         onSubmit={handleSubmission}
       >
-        <h1 className="text-3xl font-semibold mb-5 sm:mb-10">Register</h1>
+        <h1 className="text-3xl font-semibold mb-8 sm:mb-10">Register</h1>
         <div>
           <div className="formField flex gap-2 sm:gap-4 items-center">
             <label htmlFor="username">
