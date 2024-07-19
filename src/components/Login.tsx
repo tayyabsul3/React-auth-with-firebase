@@ -69,7 +69,7 @@ const Login = () => {
           className=" shadow-2xl p-8 sm:p-10 bg-green-800 rounded-3xl flex justify-center items-center flex-col text-white transition-all duration-1000 ease-in-out"
           onSubmit={handleSubmission}
         >
-          <h1 className="text-3xl font-semibold mb-10">Login</h1>
+          <h1 className="text-3xl font-semibold mb-8 sm:mb-10">Login</h1>
 
           <div>
             <div className="formField flex gap-2 sm:gap-4 items-center">
