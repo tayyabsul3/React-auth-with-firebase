@@ -23,7 +23,7 @@ const Login = () => {
         console.log(e);
         return;
       });
-    alert("Succesfully logged in  ");
+    alert("Succesfully logged in as " + auth.currentUser?.email);
     setPassword("");
     setEmail("");
   }
@@ -53,9 +53,9 @@ const Login = () => {
     return () => unsubscribe();
   }, []);
   return (
-    <div className="flex justify-center items-center h-[100vh]">
+    <div className="flex justify-center items-center h-[100vh] ">
       {isSignIn ? (
-        <div className="bg-black p-8  md:p-10 text-white shadow-xl">
+        <div className="bg-black p-10 text-white shadow-xl">
           <p>Already Logged In sign-out now to Login again.</p>
           <button
             onClick={handleLogout}
@@ -66,7 +66,7 @@ const Login = () => {
         </div>
       ) : (
         <form
-          className=" shadow-2xl p-10 bg-black flex justify-center items-center flex-col text-white transition-all duration-1000 ease-in-out"
+          className=" shadow-2xl p-8 bg-green-800 rounded-3xl flex justify-center items-center flex-col text-white transition-all duration-1000 ease-in-out"
           onSubmit={handleSubmission}
         >
           <h1 className="text-3xl font-semibold mb-10">Login</h1>
@@ -81,7 +81,7 @@ const Login = () => {
                 required={true}
                 name="email"
                 placeholder="Email"
-                className="px-4 py-3 text-lg outline-none focus:outline-none w-[230px] md:w-[300px] text-black bg-white "
+                className="px-4 py-3 text-lg outline-none focus:outline-none w-[300px] text-black bg-white rounded-3xl "
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
@@ -96,10 +96,10 @@ const Login = () => {
 
               <input
                 type={showPassword ? "text" : "password"}
-                name="password"
+                name="Password"
                 placeholder="Password"
                 required={true}
-                className="px-4 py-3 text-lg outline-none focus:outline-none w-[230px] md:w-[300px] text-black bg-white "
+                className="px-4 py-3 text-lg outline-none focus:outline-none w-[300px] text-black bg-white rounded-3xl"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
               />
@@ -119,7 +119,7 @@ const Login = () => {
                 />
               )}
             </div>
-            <div className="formField flex mt-7 items-center justify-between">
+            <div className="formField flex mt-7 items-center justify-between ">
               <div>
                 <input
                   type="checkbox"
@@ -131,11 +131,11 @@ const Login = () => {
               </div>
               <input
                 type="submit"
-                value="Submit"
-                className="w-[50px ]   bg-white text-black outline-none border-none px-3 py-2 text-xl cursor-pointer  hover:bg-slate-200 duration-300 transition-all ease-in-out"
+                value="Login"
+                className="w-[50px ] rounded-3xl   bg-white text-gray-400 hover:text-gray-700 outline-none border-none px-3 py-2 text-xl cursor-pointer  hover:bg-slate-200 duration-300 transition-all ease-in-out"
               />
             </div>
-            <div className="formField flex mt-5 justify-center items-center text-sm">
+            {/* <div className="formField flex mt-5 justify-center items-center text-sm">
               <p>Forgot Password?</p>
               <Link
                 to={"/forgotpassword"}
@@ -143,11 +143,11 @@ const Login = () => {
               >
                 Click here
               </Link>
-            </div>
+            </div> */}
             <div className="my-5 w-[100%] outline-1 outline-black mx-auto  border border-t-1 border-slate-900"></div>
             <div className="mt-10 ">
               <Link to={"/register"}>
-                <button className="w-full bg-green-600  text-black text-xl py-2 px-2 hover:bg-slate-200 cursor-pointer transition-all duration-300 ease-in-out">
+                <button className="w-full rounded-3xl bg-green-600  text-black text-xl py-2 px-2 hover:bg-slate-200 cursor-pointer transition-all duration-300 ease-in-out">
                   Register
                 </button>
               </Link>

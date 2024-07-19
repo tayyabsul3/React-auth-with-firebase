@@ -9,10 +9,5 @@
     "strict": true,
     "noEmit": true
   },
-  "include": [
-    "vite.config.ts"  // Ensure this file exists at the root level or adjust the path as needed.
-  ],
-  "exclude": [
-    "node_modules"  // Typically, you want to exclude node_modules
-  ]
+  "include": ["vite.config.ts"]
 }

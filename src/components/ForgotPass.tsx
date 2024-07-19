@@ -32,7 +32,7 @@ const ForgotPass = () => {
   return (
     <div className="flex justify-center items-center h-[100vh]">
       <form
-        className=" shadow-2xl p-8 md:p-10 bg-black flex justify-center items-center flex-col text-white transition-all duration-1000 ease-in-out"
+        className=" shadow-2xl p-10 bg-black flex justify-center items-center flex-col text-white transition-all duration-1000 ease-in-out"
         onSubmit={handleSubmission}
       >
         <h1 className="text-3xl font-semibold mb-10">Change Password</h1>
@@ -47,7 +47,7 @@ const ForgotPass = () => {
                 required={true}
                 name="email"
                 placeholder="Email"
-                className="px-4 py-3 text-lg outline-none focus:outline-none w-[250px] md:w-[300px] text-black bg-white "
+                className="px-4 py-3 text-lg outline-none focus:outline-none w-[300px] text-black bg-white "
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
