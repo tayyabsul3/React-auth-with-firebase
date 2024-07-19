@@ -66,7 +66,7 @@ const Login = () => {
         </div>
       ) : (
         <form
-          className=" shadow-2xl p-6 sm:p-10 bg-green-800 rounded-3xl flex justify-center items-center flex-col text-white transition-all duration-1000 ease-in-out"
+          className=" shadow-2xl p-8 sm:p-10 bg-green-800 rounded-3xl flex justify-center items-center flex-col text-white transition-all duration-1000 ease-in-out"
           onSubmit={handleSubmission}
         >
           <h1 className="text-3xl font-semibold mb-10">Login</h1>
@@ -132,7 +132,7 @@ const Login = () => {
               <input
                 type="submit"
                 value="Login"
-                className="w-[50px ] rounded-3xl   bg-white text-gray-400 hover:text-gray-700 outline-none border-none px-3 py-2 text-xl cursor-pointer  hover:bg-slate-200 duration-300 transition-all ease-in-out"
+                className=" rounded-3xl   bg-white text-gray-400 hover:text-gray-700 outline-none border-none px-4 py-[7px] text-lg cursor-pointer  hover:bg-slate-200 duration-300 transition-all ease-in-out"
               />
             </div>
             {/* <div className="formField flex mt-5 justify-center items-center text-sm">
