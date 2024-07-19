@@ -52,12 +52,12 @@ const Register = () => {
   return (
     <div className="flex justify-center items-center h-[100vh]">
       <form
-        className=" shadow-2xl p-10 bg-green-800 flex justify-center items-center flex-col text-white transition-all duration-1000 ease-in-out rounded-3xl"
+        className=" shadow-2xl p-6 sm:p-10 bg-green-800 flex justify-center items-center flex-col text-white transition-all duration-1000 ease-in-out rounded-3xl"
         onSubmit={handleSubmission}
       >
         <h1 className="text-3xl font-semibold mb-10">Register</h1>
         <div>
-          <div className="formField flex gap-4 items-center">
+          <div className="formField flex gap-2 sm:gap-4 items-center">
             <label htmlFor="username">
               <FaUser className="text-white" />
             </label>
@@ -66,12 +66,12 @@ const Register = () => {
               required={true}
               name="username"
               placeholder="Username"
-              className="px-4 py-3 text-lg outline-none focus:outline-none w-[300px] text-black bg-white rounded-3xl"
+              className="px-4 py-3 text-lg outline-none focus:outline-none w-[250px] sm:w-[300px] text-black bg-white rounded-3xl"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
             />
           </div>
-          <div className="formField flex gap-4 items-center mt-7">
+          <div className="formField flex gap-2 sm:gap-4 items-center mt-7">
             <label htmlFor="email">
               <SiGmail className="text-white" />
             </label>
@@ -80,14 +80,14 @@ const Register = () => {
               required={true}
               name="email"
               placeholder="Email"
-              className="px-4 py-3 text-lg outline-none focus:outline-none w-[300px] text-black bg-white rounded-3xl"
+              className="px-4 py-3 text-lg outline-none focus:outline-none w-[250px] sm:w-[300px] text-black bg-white rounded-3xl"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
           </div>
 
           <div
-            className="formField flex gap-4 items-center mt-7"
+            className="formField flex gap-2 sm:gap-4 items-center mt-7"
             style={{ position: "relative" }}
           >
             <label htmlFor="Passowrd">
@@ -99,7 +99,7 @@ const Register = () => {
               name="password"
               placeholder="Password"
               required={true}
-              className="px-4 py-3 text-lg outline-none focus:outline-none w-[300px] text-black bg-white rounded-3xl"
+              className="px-4 py-3 text-lg outline-none focus:outline-none w-[250px] sm:w-[300px] text-black bg-white rounded-3xl"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />

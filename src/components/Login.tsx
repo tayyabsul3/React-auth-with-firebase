@@ -53,7 +53,7 @@ const Login = () => {
     return () => unsubscribe();
   }, []);
   return (
-    <div className="flex justify-center items-center h-[100vh] ">
+    <div className="flex justify-center items-center h-[100vh]  w-full">
       {isSignIn ? (
         <div className="bg-black p-10 text-white shadow-xl">
           <p>Already Logged In sign-out now to Login again.</p>
@@ -66,13 +66,13 @@ const Login = () => {
         </div>
       ) : (
         <form
-          className=" shadow-2xl p-8 bg-green-800 rounded-3xl flex justify-center items-center flex-col text-white transition-all duration-1000 ease-in-out"
+          className=" shadow-2xl p-6 sm:p-10 bg-green-800 rounded-3xl flex justify-center items-center flex-col text-white transition-all duration-1000 ease-in-out"
           onSubmit={handleSubmission}
         >
           <h1 className="text-3xl font-semibold mb-10">Login</h1>
 
           <div>
-            <div className="formField flex gap-4 items-center">
+            <div className="formField flex gap-2 sm:gap-4 items-center">
               <label htmlFor="email">
                 <SiGmail className="text-white" />
               </label>
@@ -81,13 +81,13 @@ const Login = () => {
                 required={true}
                 name="email"
                 placeholder="Email"
-                className="px-4 py-3 text-lg outline-none focus:outline-none w-[300px] text-black bg-white rounded-3xl "
+                className="px-4 py-3 text-lg outline-none focus:outline-none w-[250px] sm:w-[300px] text-black bg-white rounded-3xl "
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
             </div>
             <div
-              className="formField flex gap-4 items-center mt-7"
+              className="formField flex gap-2 sm:gap-4  items-center mt-7"
               style={{ position: "relative" }}
             >
               <label htmlFor="Passowrd">
@@ -99,7 +99,7 @@ const Login = () => {
                 name="Password"
                 placeholder="Password"
                 required={true}
-                className="px-4 py-3 text-lg outline-none focus:outline-none w-[300px] text-black bg-white rounded-3xl"
+                className="px-4 py-3 text-lg outline-none focus:outline-none w-[250px] sm:w-[300px] text-black bg-white rounded-3xl"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
               />
