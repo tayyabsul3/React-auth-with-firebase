@@ -52,35 +52,35 @@ const Register = () => {
   return (
     <div className="flex justify-center items-center h-[100vh]">
       <form
-        className=" shadow-2xl p-8 sm:p-10 bg-green-800 flex justify-center items-center flex-col text-white transition-all duration-1000 ease-in-out rounded-3xl"
+        className=" shadow-2xl p-8 sm:p-10 bg-white flex justify-center items-center flex-col text-black transition-all duration-1000 ease-in-out rounded-3xl"
         onSubmit={handleSubmission}
       >
         <h1 className="text-3xl font-semibold mb-8 sm:mb-10">Register</h1>
         <div>
           <div className="formField flex gap-2 sm:gap-4 items-center">
             <label htmlFor="username">
-              <FaUser className="text-white" />
+              <FaUser className="text-black" />
             </label>
             <input
               type="text"
               required={true}
               name="username"
               placeholder="Username"
-              className="px-4 py-3 text-lg outline-none focus:outline-none w-[250px] sm:w-[300px] text-black bg-white rounded-3xl"
+              className="px-4 py-3 text-lg outline-none focus:outline-none w-[250px] sm:w-[300px] text-black bg-gray-200 rounded-3xl"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
             />
           </div>
           <div className="formField flex gap-2 sm:gap-4 items-center mt-7">
             <label htmlFor="email">
-              <SiGmail className="text-white" />
+              <SiGmail className="text-black" />
             </label>
             <input
               type="text"
               required={true}
               name="email"
               placeholder="Email"
-              className="px-4 py-3 text-lg outline-none focus:outline-none w-[250px] sm:w-[300px] text-black bg-white rounded-3xl"
+              className="px-4 py-3 text-lg outline-none focus:outline-none w-[250px] sm:w-[300px] text-black bg-gray-200 rounded-3xl"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
@@ -91,7 +91,7 @@ const Register = () => {
             style={{ position: "relative" }}
           >
             <label htmlFor="Passowrd">
-              <FaKey className="text-white" />
+              <FaKey className="text-black" />
             </label>
 
             <input
@@ -99,7 +99,7 @@ const Register = () => {
               name="password"
               placeholder="Password"
               required={true}
-              className="px-4 py-3 text-lg outline-none focus:outline-none w-[250px] sm:w-[300px] text-black bg-white rounded-3xl"
+              className="px-4 py-3 text-lg outline-none focus:outline-none w-[250px] sm:w-[300px] text-black bg-gray-200 rounded-3xl"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />
@@ -123,8 +123,8 @@ const Register = () => {
             <p className="text-red-500">{error ? errorMessage : ""}</p>
             <input
               type="submit"
+              className=" rounded-3xl   bg-gray-200 text-gray-400 hover:text-white active:bg-white outline-none border-none px-4 py-[7px] text-lg cursor-pointer  hover:bg-black duration-300 transition-all ease-in-out"
               value="Register"
-              className=" rounded-3xl   bg-white text-gray-400 hover:text-gray-700 outline-none border-none px-4 py-[7px] text-lg cursor-pointer  hover:bg-slate-200 duration-300 transition-all ease-in-out"
             />
           </div>
           {/* <div className="formField flex mt-5 justify-center items-center text-sm">
@@ -139,7 +139,7 @@ const Register = () => {
           <div className="my-5 sm:my-10 w-[100%] outline-1 outline-black mx-auto  border border-t-1 border-slate-900"></div>
           <div className="mt-10">
             <Link to={"/login"}>
-              <button className="w-full bg-green-600 rounded-3xl text-black text-xl py-2 px-2 hover:bg-slate-200 cursor-pointer transition-all duration-300 ease-in-out">
+              <button className="w-full rounded-3xl bg-black text-white text-xl py-2 px-2 hover:bg-slate-800 cursor-pointer transition-all duration-300 ease-in-out">
                 Login
               </button>
             </Link>
